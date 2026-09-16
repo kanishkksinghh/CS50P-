@@ -29,4 +29,4 @@ def get_name(student):
     
 
 for student in sorted(students, key=lambda student: student["name"]):
-     print(f"{student['name']} is in {student['college']}")
+     print(f"{student['name']} is from {student['college']}")
