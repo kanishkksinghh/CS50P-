@@ -1,10 +1,21 @@
 #Use patterns from the some kind of data from the data
+#re Regular Expressions library 
+#re.search(patterns, string, flags =0)
+
+import re 
 
 email = input("What's your email?").strip()
-
-username, domain = email.split("@")
-
-if username and "." in domain:
+if re.search(r"^.+@.+\.com$", email):
     print("Valid")
 else:
     print("Invalid")
+
+ 
+# username, domain = email.split("@")
+
+# if username and domain.endswith(".edu"):
+#     print("Valid")
+# else:
+#     print("Invalid")
+    
+    
