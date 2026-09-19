@@ -1,5 +1,7 @@
 def main():
     student = get_student()
+    if student[0] == "Kanishk":
+        student[1] = "Vikas Khand"
     print(f"{student[0]} from {student[1]}")
 
 
