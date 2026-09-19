@@ -7,12 +7,12 @@ def main():
 
 
 def get_student():
-    student = Student()
-    student.name = input("Name:") #atributes 
-    student.house = input("House:") #atributes 
+    name = input("Name:")
+    house = input("house")
+    student = Student(name, house)
     return student
 
     
 
 if __name__ == "__main__":
-    main()
+    main() 
