@@ -1,7 +1,12 @@
 class Student:  #Class
     def __int__(self, name, house):
+        if not name:
+            raise ValueError("Missing Value")
+        if house not in ["Vikas", "GomtiNagar", "Lucknow"]:
+            raise ValueError("Invalid House")
+            
         self.name = name
-        self.house = []
+        self.house = house
     
 def main():
     student = get_student()
@@ -19,4 +24,4 @@ def get_student():
     
 
 if __name__ == "__main__":
-    main() 
+    main()
